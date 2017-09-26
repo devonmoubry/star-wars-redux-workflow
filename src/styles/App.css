@@ -1,0 +1,146 @@
+body {
+  background-color : #3f3d34;
+  font-family      : Raleway;
+}
+
+nav {
+  padding-top : 40px;
+}
+
+.nav-title {
+  font-family : Arizonia;
+  font-size   : 125%;
+}
+
+.app-body {
+  background-color : white;
+  display          : flex;
+  padding-bottom   : 30px;
+  padding-top      : 30px;
+}
+
+.offset {
+  bottom     : 80px;
+  box-shadow : rgba(0, 0, 0, 0.22) -2px 9px 5px 0;
+  position   : relative;
+}
+
+.headings {
+  font-family : Raleway;
+  font-weight : bold;
+}
+
+.sub-headings {
+  color      : #9e9e9e;
+  font-style : italic;
+}
+
+.fa {
+  font-size : 1.3em;
+}
+
+.card {
+  box-shadow : -1px 4px 5px #9e9e9e;
+  margin-top : 20px;
+  padding    : 20px;
+}
+
+.tiles {
+  margin     : 0 auto;
+  text-align : center;
+}
+
+.back {
+  margin-top : 30px;
+}
+
+footer {
+  color          : #fff;
+  padding-bottom : 20px;
+  text-align     : center;
+}
+
+.btn-primary {
+  background-color : #000000;
+  border-color     : #9e9e9e;
+  color            : #ffeb3b;
+}
+
+.list-group-item:hover {
+  transform : scale(1.1);
+}
+
+.thumbnail:hover {
+  transform : scale(1.05);
+}
+
+.thumbnail {
+  box-shadow : 0 3px 5px rgba(128, 128, 128, 0.43);
+}
+
+.loader {
+  animation     : spin 1s linear infinite;
+  border        : 10px solid #f3f3f3;
+  border-radius : 50%;
+  border-top    : 10px solid yellow;
+  height        : 120px;
+  width         : 120px;
+}
+
+@keyframes spin {
+  0% {
+    transform : rotate(0deg);
+  }
+
+  100% {
+    transform : rotate(360deg);
+  }
+}
+
+/* General styles and layout */
+
+.starwars {
+  height    : 17em;
+  left      : 50%;
+  position  : absolute;
+  top       : 53%;
+  transform : translate(-50%, -50%);
+  width     : 34em;
+}
+
+.byline span {
+  display : inline-block;
+}
+
+img {
+  width : 100%;
+}
+
+.byline {
+  color          : #fff;
+  font-family    : "Raleway";
+  font-size      : 3.25em;
+  left           : -2em;
+  letter-spacing : 0.4em;
+  position       : absolute;
+  right          : -2em;
+  text-align     : center;
+  text-transform : uppercase;
+  top            : 29%;
+}
+
+/* Media queries for adjusting to different screen sizes ** */
+
+@media only screen
+       and (max-width : 600px) {
+  .starwars {
+    font-size : 10px;
+  }
+}
+
+@media only screen
+       and (max-width : 480px) {
+  .starwars {
+    font-size : 7px;
+  }
+}
